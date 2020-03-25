@@ -170,18 +170,22 @@ def Act5 ()
 end
 
 def Act6 ()
-	puts "Ingrese un año:"
-	año = gets.chomp.to_i
+	puts "Ingrese primer año:"
+	año1 = gets.chomp.to_i
 
-	if año.modulo(4)==0
-		puts "entre"
-		if año.modulo(100)==0
-			puts "El año " + año.to_s + " no es bisiesto"
-		elsif año.modulo(400)==0
-			puts "El año " + año.to_s + " es bisiesto"
-		else
-			puts "El año " + año.to_s + " es bisiesto"
-		end
+	puts "Ingrese segundo año:"
+	año2 = gets.chomp.to_i
+
+	puts "Años bisiestos entre: " + año1.to_s + " y " + año2.to_s
+	for i in año1...año2+1
+		if i.modulo(4)==0
+			if i.modulo(100)==0
+				if i.modulo(400)==0
+					puts i
+				end
+			else
+				puts i
+			end
 	end
 end
 
