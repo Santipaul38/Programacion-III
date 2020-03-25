@@ -187,6 +187,7 @@ def Act6 ()
 			else
 				puts i
 			end
+		end
 	end
 end
 
