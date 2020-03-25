@@ -170,6 +170,7 @@ def Act5 ()
 end
 
 def Act6 ()
+	puts "Actividad 6: "
 	puts "Ingrese primer año:"
 	año1 = gets.chomp.to_i
 
